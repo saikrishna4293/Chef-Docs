@@ -7,8 +7,8 @@ service node["service_name"] do
   action [:start, :enable]
 end
 
-cookbook_file "#{node["document_root"]}/index.html" do
-  source "index.html"
+template "#{node["document_root"]}/index.html" do
+  source "index.html.erb"
   mode "0644"
 end
 

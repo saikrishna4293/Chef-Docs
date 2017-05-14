@@ -4,7 +4,7 @@ maintainer_email 'you@example.com'
 license 'All Rights Reserved'
 description 'Installs/Configures motd'
 long_description 'Installs/Configures motd'
-version '0.2.5'
+version '0.3.0'
 chef_version '>= 12.1' if respond_to?(:chef_version)
 
 depends 'variables'

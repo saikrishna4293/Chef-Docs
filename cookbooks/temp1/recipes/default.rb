@@ -1,5 +1,5 @@
 
-node["temp1"].each do |name|
+node["temp1"]["iterate"].each do |name, data_init|
   
   folder = "/etc/workspace/#{name}"
   directory folder do
@@ -9,9 +9,8 @@ node["temp1"].each do |name|
   template "#{folder}/#{name}.txt" do
     source "name.erb"
     mode "0644"
-    #variables (
-#	:username => "saikrishna"
-#        :location => "India"
-#    )
+    variables(
+	:uname => data_init["data"]
+    )
   end
 end
