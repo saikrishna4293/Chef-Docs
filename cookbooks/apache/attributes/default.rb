@@ -8,3 +8,8 @@ case node["platform"]
   default["service_name"]  = "apache2"
   default["document_root"] = "/var/www"
 end
+
+# instead of case we can use if statement
+# if node["platform"] == "centos"
+# elsif node["platform"] == "ubuntu"
+# end
