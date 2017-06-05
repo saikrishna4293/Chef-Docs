@@ -5,6 +5,9 @@ case node["fqdn"]
   when "node2.localhost"
     default["motd"]["name"] = "Agent2"
     default["motd"]["loc"]  = "Soan"
+  when "node3.localhost"
+    default["motd"]["name"] = "Agent3" 
+    default["motd"]["loc"]  = "America"
 end
 
 default["temp4-rel"]["name"] = "ViratKohli"
