@@ -1,4 +1,8 @@
 
+directory "#{node["document_root"]}" do
+        recursive true
+end
+
 package node["package_name"] do
   action :install
 end
