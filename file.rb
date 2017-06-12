@@ -1,7 +1,4 @@
-file "/etc/motd" do 
-	content "Hi Devops Engineer"
-end
-
-package "ntp" do 
-	action :remove
+file "/etc/workspace/test.txt" do
+   action :create
+   content "Hello man how are you"
 end

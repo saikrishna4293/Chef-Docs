@@ -12,3 +12,5 @@ end
 cookbook_file "/etc/workspace/file2.txt"
 	source "file2.txt"
 end
+
+
