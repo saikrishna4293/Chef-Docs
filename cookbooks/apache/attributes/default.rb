@@ -7,10 +7,6 @@ case node["platform"]
   default["package_name"]  = "apache2"
   default["service_name"]  = "apache2"
   default["document_root"] = "/var/www"
- when "amazon"
-  default["package_name"]  = "httpd"
-  default["service_name"]  = "httpd"
-  default["document_root"] = "/var/www/html"
 end
 
 # instead of case we can use if statement

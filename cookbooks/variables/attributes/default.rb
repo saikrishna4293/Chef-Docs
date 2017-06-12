@@ -8,9 +8,6 @@ case node["fqdn"]
   when "node3.localhost"
     default["motd"]["name"] = "Agent3" 
     default["motd"]["loc"]  = "America"
-  when "ip-172-31-44-77.us-east-2.compute.internal" 
-    default["motd"]["name"] = "Agent5" 
-    default["motd"]["loc"]  = "England"
 end
 
 default["temp4-rel"]["name"] = "ViratKohli"
@@ -21,8 +18,5 @@ case node["platform"]
     default["apache"]["sername"] = "httpd"
   when "ubuntu"    
     default["apache"]["uname"] = "ubuntu"
-    default["apache"]["sername"] = "apache2"
-  when "amazon"
-    default["apache"]["uname"] = "linux"
-    default["apache"]["sername"] = "httpd"
+    default["apache"]["uname"] = "apache2"
 end
